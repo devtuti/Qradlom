@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a1a1a">
+    <title>ГрадЛом - Вывоз металлолома и демонтаж | Екатеринбург</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- App Header -->
+    <header class="app-header">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <img src="logo/logo.jpg" width="100%" height="100%">
+                <i class="bi bi-crane"></i>
+            </div>
+            <div class="logo-text">ГРАДЛОМ</div>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Открыть меню">
+            <i class="bi bi-list"></i>
+        </button>
+    </header>
+
+    <!-- ================= SIDEBAR MENU (NEW) ================= -->
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+    <aside class="sidebar-menu" id="sidebarMenu">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <div class="sidebar-logo-icon">
+                    <img src="logo/logo.jpg" width="100%" height="100%">
+                    <i class="bi bi-crane"></i>
+                </div>
+                <div class="sidebar-logo-text">ГРАДЛОМ</div>
+            </div>
+            <button class="close-btn" onclick="toggleSidebar()" aria-label="Закрыть меню">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        
+        <div class="sidebar-body">
+            <div class="sidebar-section-title">Навигация</div>
+            <ul class="sidebar-nav">
+                <li><a href="#hero" onclick="toggleSidebar()"><i class="bi bi-house-fill"></i> Главная</a></li>
+                <li><a href="#services" onclick="toggleSidebar()"><i class="bi bi-tools"></i> Услуги</a></li>
+                <li><a href="#gallery" onclick="toggleSidebar()"><i class="bi bi-images"></i> Выполненные работы</a></li>
+                <li><a href="#advantages" onclick="toggleSidebar()"><i class="bi bi-star-fill"></i> Преимущества</a></li>
+                <li><a href="#contacts" onclick="toggleSidebar()"><i class="bi bi-telephone-fill"></i> Контакты</a></li>
+            </ul>
+            
+            <div class="sidebar-divider"></div>
+            
+            <div class="sidebar-section-title">Дополнительно</div>
+            <ul class="sidebar-nav">
+                <li><a href="https://www.avito.ru/ekaterinburg/predlozheniya_uslug/uslugi_lomovoza_3079233950" target="_blank"><i class="bi bi-shop-window"></i> Мы на Avito</a></li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-footer">
+            <div class="sidebar-section-title" style="padding: 0; margin-bottom: 12px;">Свяжитесь с нами</div>
+            <a href="tel:+79126948888" class="sidebar-contact">
+                <div class="sidebar-contact-icon"><i class="bi bi-telephone-fill"></i></div>
+                <div>
+                    <div class="sidebar-contact-name">Роман</div>
+                    <div class="sidebar-contact-number">+7 912 694-88-88</div>
+                </div>
+            </a>
+            <a href="tel:+79126049999" class="sidebar-contact">
+                <div class="sidebar-contact-icon"><i class="bi bi-telephone-fill"></i></div>
+                <div>
+                    <div class="sidebar-contact-name">Рустам</div>
+                    <div class="sidebar-contact-number">+7 912 604-99-99</div>
+                </div>
+            </a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-logo">
+                <img src="logo/logo.jpg" width="100%" height="100%" style="border-radius: 20px;">
+                <i class="bi bi-crane"></i>
+            </div>
+            <!--<h1 class="hero-title">ГРАДЛОМ</h1>-->
+            <p class="hero-subtitle">Профессиональный вывоз металлолома и демонтаж</p>
+            <div class="location-badge"><i class="bi bi-geo-alt-fill"></i> г. Екатеринбург</div>
+        </section>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+            <a href="#services" class="action-card">
+                <div class="action-icon"><i class="bi bi-tools"></i></div>
+                <div class="action-title">Услуги</div><div class="action-desc">Наш сервис</div>
+            </a>
+            <a href="#gallery" class="action-card">
+                <div class="action-icon"><i class="bi bi-images"></i></div>
+                <div class="action-title">Работы</div><div class="action-desc">Фото и видео</div>
+            </a>
+            <a href="#advantages" class="action-card">
+                <div class="action-icon"><i class="bi bi-star-fill"></i></div>
+                <div class="action-title">Преимущества</div><div class="action-desc">Почему мы</div>
+            </a>
+            <a href="#contacts" class="action-card">
+                <div class="action-icon"><i class="bi bi-phone-fill"></i></div>
+                <div class="action-title">Контакты</div><div class="action-desc">Связаться</div>
+            </a>
+        </div>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <h2 class="section-title"><i class="bi bi-gear-fill"></i> Наши услуги</h2>
+            <p style="color: var(--gray-text); margin-bottom: 20px; font-size: 14px;">Комплексные работы по вывозу и демонтажу любой сложности.</p>
+            <ul class="service-list">
+                <li class="service-item"><i class="bi bi-check-circle-fill"></i><div class="service-text"><strong>Вывоз металлолома</strong><br>Быстрый вывоз металлического лома</div></li>
+                <li class="service-item"><i class="bi bi-check-circle-fill"></i><div class="service-text"><strong>Вывоз строительного мусора</strong><br>Очистка территорий от отходов</div></li>
+                <li class="service-item"><i class="bi bi-check-circle-fill"></i><div class="service-text"><strong>Демонтаж зданий</strong><br>Полный демонтаж строений любой сложности</div></li>
+                <li class="service-item"><i class="bi bi-check-circle-fill"></i><div class="service-text"><strong>Погрузка и транспортировка</strong><br>Спецтехникой с манипулятором</div></li>
+            </ul>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section" style="background: var(--darker-bg);">
+            <h2 class="section-title"><i class="bi bi-images"></i> Выполненные работы</h2>
+            <p style="color: var(--gray-text); margin-bottom: 20px; font-size: 14px;">Реальные фото и видео с наших объектов в Екатеринбурге.</p>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="demolition">Демонтаж</button>
+                <button class="filter-btn" data-filter="scrap">Вывоз лома</button>
+                <button class="filter-btn" data-filter="equipment">Спецтехника</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="demolition" data-type="image" data-src="images/1.jpg" onclick="openMedia(this)">
+                    <img src="images/1.jpg" alt="Демонтаж здания" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+                    <div class="gallery-label">Демонтаж</div>
+                </div>
+                <div class="gallery-item" data-category="scrap" data-type="video" data-src="video/1.mp4" onclick="openMedia(this)">
+                    <img src="images/2.jpg" alt="Вывоз металлолома" loading="lazy">
+                    <div class="gallery-overlay video-overlay"><i class="bi bi-play-circle-fill"></i></div>
+                    <div class="gallery-label">Видео • Вывоз лома</div>
+                </div>
+                <div class="gallery-item" data-category="equipment" data-type="image" data-src="images/3.jpg" onclick="openMedia(this)">
+                    <img src="images/3.jpg" alt="Спецтехника" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+                    <div class="gallery-label">Манипулятор</div>
+                </div>
+                <div class="gallery-item" data-category="demolition" data-type="image" data-src="images/4.jpg" onclick="openMedia(this)">
+                    <img src="images/4.jpg" alt="Демонтаж конструкций" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+                    <div class="gallery-label">Демонтаж</div>
+                </div>
+                <div class="gallery-item" data-category="equipment" data-type="video" data-src="video/2.mp4" onclick="openMedia(this)">
+                    <img src="images/5.jpg" alt="Работа манипулятора" loading="lazy">
+                    <div class="gallery-overlay video-overlay"><i class="bi bi-play-circle-fill"></i></div>
+                    <div class="gallery-label">Видео • Техника</div>
+                </div>
+                <div class="gallery-item" data-category="scrap" data-type="image" data-src="images/6.jpg" onclick="openMedia(this)">
+                    <img src="images/6.jpg" alt="Погрузка лома" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+                    <div class="gallery-label">Вывоз лома</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantages Section -->
+        <section id="advantages" class="section">
+            <h2 class="section-title"><i class="bi bi-trophy-fill"></i> Почему выбирают нас</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon"><i class="bi bi-clock-fill"></i></div>
+                    <div class="advantage-content"><h4>Быстрая подача</h4><p>Выполнение заказа в срок, выезд в день обращения.</p></div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon"><i class="bi bi-shield-check"></i></div>
+                    <div class="advantage-content"><h4>Гарантия безопасности</h4><p>Соблюдение всех норм и экологических стандартов.</p></div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon"><i class="bi bi-people-fill"></i></div>
+                    <div class="advantage-content"><h4>Опытные специалисты</h4><p>Профессиональная команда с многолетним опытом.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacts" class="contact-section">
+            <h2 class="section-title"><i class="bi bi-telephone-fill"></i> Контакты</h2>
+            <div class="contact-card">
+                <div class="contact-label">Позвоните нам</div>
+                <a href="tel:+79126948888" class="contact-item">
+                    <i class="bi bi-person-circle main-icon"></i>
+                    <div class="contact-info"><div class="contact-name">Роман</div><div class="contact-number">+7 912 694-88-88</div></div>
+                    <i class="bi bi-chevron-right" style="color: var(--gray-text);"></i>
+                </a>
+                <a href="tel:+79126049999" class="contact-item">
+                    <i class="bi bi-person-circle main-icon"></i>
+                    <div class="contact-info"><div class="contact-name">Рустам</div><div class="contact-number">+7 912 604-99-99</div></div>
+                    <i class="bi bi-chevron-right" style="color: var(--gray-text);"></i>
+                </a>
+                <div class="messenger-links">
+                    <div class="messenger-badge"><i class="bi bi-whatsapp"></i> WhatsApp</div>
+                    <div class="messenger-badge"><i class="bi bi-telegram"></i> Telegram</div>
+                    <div class="messenger-badge"><i class="bi bi-chat-dots-fill"></i> МАХ</div>
+                </div>
+                <p style="color: var(--gray-text); font-size: 13px; margin-top: 15px; text-align: center;">
+                    <i class="bi bi-info-circle-fill" style="color: var(--primary-color);"></i> Рекомендуем звонить
+                </p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-label">Мы на Avito</div>
+                <a href="https://www.avito.ru/ekaterinburg/predlozheniya_uslug/uslugi_lomovoza_3079233950" target="_blank" class="avito-link">
+                    <i class="bi bi-shop-window"></i> Посмотреть профиль на Avito
+                </a>
+            </div>
+            <div class="desktop-cta">
+                <a href="tel:+79126948888" class="btn-primary-custom"><i class="bi bi-telephone-fill"></i> Позвонить Роману</a>
+                <a href="tel:+79126049999" class="btn-outline-custom"><i class="bi bi-telephone-fill"></i> Позвонить Рустаму</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="background: var(--darker-bg); padding: 30px 20px; text-align: center;">
+            <i class="bi bi-crane" style="font-size: 40px; color: var(--primary-color);"></i>
+            <h3 style="font-size: 24px; font-weight: 800; margin: 15px 0 10px;">ГРАДЛОМ</h3>
+            <p style="color: var(--gray-text); font-size: 14px; margin-bottom: 20px;">Надёжный партнёр в сфере демонтажа и вывоза металлолома</p>
+            <p style="color: #666; font-size: 12px;">© 2024 ГрадЛом. Все права защищены. г. Екатеринбург</p>
+        </footer>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="#services" class="nav-item"><i class="bi bi-tools"></i><span>Услуги</span></a>
+        <a href="#gallery" class="nav-item"><i class="bi bi-images"></i><span>Работы</span></a>
+        <a href="tel:+79126948888" class="nav-item call-btn"><i class="bi bi-telephone-fill"></i><span>Позвонить</span></a>
+        <a href="#advantages" class="nav-item"><i class="bi bi-star-fill"></i><span>О нас</span></a>
+        <a href="#contacts" class="nav-item"><i class="bi bi-chat-fill"></i><span>Связь</span></a>
+    </nav>
+
+    <!-- Media Modal -->
+    <div class="modal fade" id="mediaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Просмотр</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-0" style="background: #000;">
+                    <img id="modalImage" src="" alt="Full size" style="max-width: 100%; max-height: 70vh; display: none;">
+                    <video id="modalVideo" controls style="max-width: 100%; max-height: 70vh; display: none;">
+                        <source src="" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
