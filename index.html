@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#1a1a1a">
+    <!-- Meta Description (Axtarış nəticələrində görünəcək qısa məlumat - 140-160 simvol) -->
+    <meta name="description" content="Вывоз металлолома и демонтаж зданий в Екатеринбурге. Услуги ломовоза, экскаватора и манипулятора. Быстрая подача техники, низкие цены. ☎ Звоните!">
+
+    <!-- Meta Keywords (Axtarış sistemləri üçün açar sözlər) -->
+    <meta name="keywords" content="вывоз металлолома екатеринбург, демонтаж зданий, услуги ломовоза, аренда экскаватора, манипулятор екатеринбург, вывоз строительного мусора, демонтаж металлоконструкций, снос зданий, утилизация металла, градлом">
+
+    <!-- Open Graph (WhatsApp, Telegram və sosial şəbəkələrdə link paylaşanda gözəl görünməsi üçün) -->
+    <meta property="og:title" content="ГрадЛом - Вывоз металлолома и демонтаж в Екатеринбурге">
+    <meta property="og:description" content="Профессиональный вывоз металлолома, демонтаж зданий, услуги экскаватора и манипулятора. Быстрая подача!">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
     <title>ГрадЛом - Вывоз металлолома и демонтаж | Екатеринбург</title>
     
     <!-- Bootstrap 5 CSS -->
@@ -124,6 +135,7 @@
                 <li class="service-item"><i class="bi bi-check-circle-fill"></i><div class="service-text"><strong>Вывоз металлолома</strong><br>Быстрый вывоз металлического лома</div></li>
                 <li class="service-item"><i class="bi bi-check-circle-fill"></i><div class="service-text"><strong>Вывоз строительного мусора</strong><br>Очистка территорий от отходов</div></li>
                 <li class="service-item"><i class="bi bi-check-circle-fill"></i><div class="service-text"><strong>Демонтаж зданий</strong><br>Полный демонтаж строений любой сложности</div></li>
+                <li class="service-item"><i class="bi bi-check-circle-fill"></i><div class="service-text"><strong>Услуги экскаватора</strong><br>Аренда спецтехники для земляных и демонтажных работ</div></li>
                 <li class="service-item"><i class="bi bi-check-circle-fill"></i><div class="service-text"><strong>Погрузка и транспортировка</strong><br>Спецтехникой с манипулятором</div></li>
             </ul>
         </section>
@@ -137,40 +149,99 @@
                 <button class="filter-btn active" data-filter="all">Все</button>
                 <button class="filter-btn" data-filter="demolition">Демонтаж</button>
                 <button class="filter-btn" data-filter="scrap">Вывоз лома</button>
+                <button class="filter-btn" data-filter="waste_removal">Вывоз мусора</button>
+                <button class="filter-btn" data-filter="branches">Веток</button>
+                <button class="filter-btn" data-filter="excavator">Экскаватор</button>
                 <button class="filter-btn" data-filter="equipment">Спецтехника</button>
             </div>
 
             <div class="gallery-grid">
-                <div class="gallery-item" data-category="demolition" data-type="image" data-src="images/1.jpg" onclick="openMedia(this)">
+                <div class="gallery-item" data-category="demolition" data-type="video" data-src="video/demont1.mp4" onclick="openMedia(this)">
                     <img src="images/1.jpg" alt="Демонтаж здания" loading="lazy">
-                    <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-                    <div class="gallery-label">Демонтаж</div>
+                    <div class="gallery-overlay video-overlay"><i class="bi bi-play-circle-fill"></i></div>
+                    <div class="gallery-label">Видео • Демонтаж 1</div>
                 </div>
                 <div class="gallery-item" data-category="scrap" data-type="video" data-src="video/1.mp4" onclick="openMedia(this)">
-                    <img src="images/2.jpg" alt="Вывоз металлолома" loading="lazy">
+                    <img src="images/ломовоз2.jpg" alt="Вывоз металлолома" loading="lazy">
                     <div class="gallery-overlay video-overlay"><i class="bi bi-play-circle-fill"></i></div>
                     <div class="gallery-label">Видео • Вывоз лома</div>
                 </div>
-                <div class="gallery-item" data-category="equipment" data-type="image" data-src="images/3.jpg" onclick="openMedia(this)">
-                    <img src="images/3.jpg" alt="Спецтехника" loading="lazy">
-                    <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-                    <div class="gallery-label">Манипулятор</div>
-                </div>
-                <div class="gallery-item" data-category="demolition" data-type="image" data-src="images/4.jpg" onclick="openMedia(this)">
-                    <img src="images/4.jpg" alt="Демонтаж конструкций" loading="lazy">
-                    <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-                    <div class="gallery-label">Демонтаж</div>
-                </div>
-                <div class="gallery-item" data-category="equipment" data-type="video" data-src="video/2.mp4" onclick="openMedia(this)">
-                    <img src="images/5.jpg" alt="Работа манипулятора" loading="lazy">
-                    <div class="gallery-overlay video-overlay"><i class="bi bi-play-circle-fill"></i></div>
-                    <div class="gallery-label">Видео • Техника</div>
-                </div>
-                <div class="gallery-item" data-category="scrap" data-type="image" data-src="images/6.jpg" onclick="openMedia(this)">
-                    <img src="images/6.jpg" alt="Погрузка лома" loading="lazy">
+
+                 <div class="gallery-item" data-category="scrap" data-type="image" data-src="images/ломовоз1.jpg" onclick="openMedia(this)">
+                    <img src="images/ломовоз1.jpg" alt="Погрузка лома" loading="lazy">
                     <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
                     <div class="gallery-label">Вывоз лома</div>
                 </div>
+
+                <div class="gallery-item" data-category="waste_removal" data-type="image" data-src="images/musor1.jpg" onclick="openMedia(this)">
+                    <img src="images/musor1.jpg" alt="Вывоз мусора" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+                    <div class="gallery-label">Вывоз мусора 1</div>
+                </div>
+                 <div class="gallery-item" data-category="waste_removal" data-type="image" data-src="images/musor2.jpg" onclick="openMedia(this)">
+                    <img src="images/musor2.jpg" alt="Вывоз мусора" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+                    <div class="gallery-label">Вывоз мусора 2</div>
+                </div>
+                 <div class="gallery-item" data-category="waste_removal" data-type="video" data-src="video/musor1.mp4" onclick="openMedia(this)">
+                    <img src="images/musor3.jpg" alt="Вывоз мусора" loading="lazy">
+                    <div class="gallery-overlay video-overlay"><i class="bi bi-play-circle-fill"></i></div>
+                    <div class="gallery-label"> Видео • Вывоз мусора 3</div>
+                </div>
+
+                 <div class="gallery-item" data-category="waste_removal" data-type="video" data-src="video/musor2.mp4" onclick="openMedia(this)">
+                    <img src="images/musor4.jpg" alt="Вывоз мусора" loading="lazy">
+                    <div class="gallery-overlay video-overlay"><i class="bi bi-play-circle-fill"></i></div>
+                    <div class="gallery-label">Видео • Вывоз мусора 4</div>
+                </div>
+
+                 <div class="gallery-item" data-category="demolition" data-type="video" data-src="video/demont2.mp4" onclick="openMedia(this)">
+                    <img src="images/demont1.jpg" alt="Демонтаж здания" loading="lazy">
+                    <div class="gallery-overlay video-overlay"><i class="bi bi-play-circle-fill"></i></div>
+                    <div class="gallery-label">Видео • Демонтаж 2</div>
+                </div>
+                <div class="gallery-item" data-category="equipment" data-type="image" data-src="images/3.jpg" onclick="openMedia(this)">
+                    <img src="images/3.jpg" alt="Работа манипулятора" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+                    <div class="gallery-label"> Техника 1</div>
+                </div>
+
+                <div class="gallery-item" data-category="equipment" data-type="image" data-src="images/4.jpg" onclick="openMedia(this)">
+                    <img src="images/4.jpg" alt="Работа манипулятора" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+                    <div class="gallery-label"> Техника 2</div>
+                </div>
+
+                 <div class="gallery-item" data-category="equipment" data-type="image" data-src="images/8.jpg" onclick="openMedia(this)">
+                    <img src="images/8.jpg" alt="Работа манипулятора" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+                    <div class="gallery-label"> Техника 3</div>
+                </div>
+
+                <div class="gallery-item" data-category="equipment" data-type="image" data-src="images/12.jpg" onclick="openMedia(this)">
+                    <img src="images/12.jpg" alt="Работа манипулятора" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+                    <div class="gallery-label"> Техника 4</div>
+                </div>
+
+                  <div class="gallery-item" data-category="equipment" data-type="image" data-src="images/13.jpg" onclick="openMedia(this)">
+                    <img src="images/13.jpg" alt="Работа манипулятора" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+                    <div class="gallery-label"> Техника 5</div>
+                </div>
+
+                 <div class="gallery-item" data-category="branches" data-type="video" data-src="video/vetok1.mp4" onclick="openMedia(this)">
+                    <img src="images/11.jpg" alt="Услуги экскаватора" loading="lazy">
+                    <div class="gallery-overlay video-overlay"><i class="bi bi-play-circle-fill"></i></div>
+                    <div class="gallery-label">Видео • Веток</div>
+                </div>
+
+                  <div class="gallery-item" data-category="excavator" data-type="video" data-src="video/eks5.mp4" onclick="openMedia(this)">
+                    <img src="images/2.jpg" alt="Услуги экскаватора" loading="lazy">
+                    <div class="gallery-overlay video-overlay"><i class="bi bi-play-circle-fill"></i></div>
+                    <div class="gallery-label">Видео • Экскаватора</div>
+                </div>
+               
             </div>
         </section>
 
@@ -219,7 +290,7 @@
             </div>
             <div class="contact-card">
                 <div class="contact-label">Мы на Avito</div>
-                <a href="https://www.avito.ru/ekaterinburg/predlozheniya_uslug/uslugi_lomovoza_3079233950" target="_blank" class="avito-link">
+                <a href="https://www.avito.ru/ekaterinburg/predlozheniya_uslug/uslugi_spetstehniki_8425592289" target="_blank" class="avito-link">
                     <i class="bi bi-shop-window"></i> Посмотреть профиль на Avito
                 </a>
             </div>
@@ -234,7 +305,7 @@
             <i class="bi bi-crane" style="font-size: 40px; color: var(--primary-color);"></i>
             <h3 style="font-size: 24px; font-weight: 800; margin: 15px 0 10px;">ГРАДЛОМ</h3>
             <p style="color: var(--gray-text); font-size: 14px; margin-bottom: 20px;">Надёжный партнёр в сфере демонтажа и вывоза металлолома</p>
-            <p style="color: #666; font-size: 12px;">© 2024 ГрадЛом. Все права защищены. г. Екатеринбург</p>
+            <p style="color: #666; font-size: 12px;">© 2026 ГрадЛом. Все права защищены. г. Екатеринбург</p>
         </footer>
     </main>
 
